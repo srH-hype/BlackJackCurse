@@ -1,0 +1,221 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://Assects/theme.tres" type="Theme" id=1]
+[ext_resource path="res://Scenes/MainMenu.gd" type="Script" id=2]
+[ext_resource path="res://Assects/icons/CoB_logo.png" type="Texture" id=3]
+[ext_resource path="res://Assects/fonts/Greenscr.ttf" type="DynamicFontData" id=4]
+[ext_resource path="res://Assects/audio/story time(Augmentality).ogg" type="AudioStream" id=5]
+[ext_resource path="res://Assects/icons/logo_small_color_light.png" type="Texture" id=6]
+[ext_resource path="res://Assects/icons/logoPro(500x500).png" type="Texture" id=7]
+[ext_resource path="res://Assects/icons/scene1.png" type="Texture" id=8]
+
+[sub_resource type="DynamicFont" id=2]
+size = 70
+outline_size = 7
+font_data = ExtResource( 4 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 28
+font_data = ExtResource( 4 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Panel" type="Panel" parent="."]
+margin_right = 1024.0
+margin_bottom = 800.0
+rect_min_size = Vector2( 1024, 800 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0, 0, 1 )
+
+[node name="ButtonPlay" type="Button" parent="Panel/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -350.079
+margin_top = 140.0
+margin_right = -164.0
+margin_bottom = 223.0
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+text = "Esta"
+flat = true
+
+[node name="ButtonEsp" type="Button" parent="Panel/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -286.48
+margin_top = 223.595
+margin_right = -94.4802
+margin_bottom = 306.595
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+text = "Espa¤ol"
+flat = true
+
+[node name="ButtonEng" type="Button" parent="Panel/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 111.52
+margin_top = 223.595
+margin_right = 303.52
+margin_bottom = 306.595
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+text = "English"
+flat = true
+
+[node name="ButtonHowTo" type="Button" parent="Panel/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -146.718
+margin_top = 140.0
+margin_right = 45.282
+margin_bottom = 223.0
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+text = "Esta"
+flat = true
+
+[node name="ButtonCredits" type="Button" parent="Panel/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 163.282
+margin_top = 140.0
+margin_right = 355.282
+margin_bottom = 223.0
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 0, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_color_hover = Color( 1, 1, 1, 1 )
+text = "Esta"
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="Panel/ColorRect"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -208.0
+margin_top = -400.0
+margin_right = 3565.0
+margin_bottom = 3379.0
+rect_scale = Vector2( 0.11, 0.11 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Panel/ColorRect"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -0.5
+margin_bottom = 144.5
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 2 )
+text = "BlackJack
+ Curse "
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="logo2" type="ColorRect" parent="Panel/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="LogoSmallColorLight" type="Sprite" parent="Panel/ColorRect/logo2"]
+position = Vector2( 507.948, 357.751 )
+texture = ExtResource( 7 )
+
+[node name="logo1" type="ColorRect" parent="Panel/ColorRect"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="LogoSmallColorLight" type="Sprite" parent="Panel/ColorRect/logo1"]
+position = Vector2( 502.468, 366.548 )
+scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 6 )
+
+[node name="Timer" type="Timer" parent="Panel/ColorRect"]
+autostart = true
+
+[node name="menuAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -14.0
+autoplay = true
+
+[node name="Cinematic" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="scene" type="ColorRect" parent="Cinematic"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 0, 0, 1 )
+
+[node name="sceneImage" type="Sprite" parent="Cinematic"]
+position = Vector2( 530.685, 456.809 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 8 )
+
+[node name="labelScene" type="Label" parent="Cinematic"]
+margin_left = 39.0
+margin_top = 22.0
+margin_right = 981.0
+margin_bottom = 204.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "Esta"
+autowrap = true
+
+[node name="timerScene" type="Timer" parent="Cinematic"]
+wait_time = 3.0
+one_shot = true
+
+[node name="ButtonPlayScene" type="Button" parent="Cinematic"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 294.325
+margin_top = 257.466
+margin_right = 486.325
+margin_bottom = 340.466
+theme = ExtResource( 1 )
+custom_colors/font_color_disabled = Color( 1, 1, 1, 1 )
+flat = true
+
+[connection signal="pressed" from="Panel/ColorRect/ButtonPlay" to="." method="_on_ButtonPlay_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/ButtonEsp" to="." method="_on_ButtonEsp_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/ButtonEng" to="." method="_on_ButtonEng_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/ButtonHowTo" to="." method="_on_ButtonHowTo_pressed"]
+[connection signal="pressed" from="Panel/ColorRect/ButtonCredits" to="." method="_on_ButtonCredits_pressed"]
+[connection signal="timeout" from="Panel/ColorRect/Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Cinematic/timerScene" to="." method="_on_timerScene_timeout"]
+[connection signal="pressed" from="Cinematic/ButtonPlayScene" to="." method="_on_ButtonPlayScene_pressed"]
